@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    --minwidth: calc(max(300px, 30vw));
+    --maxwidth: calc(100vw - var(--minwidth));
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(./Norse-Bold.otf);
+}
+
+a {
+    color: inherit;
+}
+
+.last {
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.last a {
+    font-weight: bold;
+    color: #596D48;
+}
+
+button {
+    background-color: #596D48;
+    width: 240px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.left {
+    background-image: url(./background.avif);
+    height: 100vh;
+    width: 30vw;
+    background-size: cover;
+    min-width: 300px;
+}
+
+.top, .mid, .bot {
+    width: var(--maxwidth);    
+    height: 35vh;
+    position: absolute;
+    left: var(--minwidth);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    top: 0px; 
+    background-color: #f5f5f5;
+}
+
+.mid {
+    top: 35vh;
+    background-color: white;
+    
+}
+
+.bot {
+    top: 65vh;
+    background-color: #f5f5f5;
+}
+
+.top > div > p, .mid > div > p {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    margin-top: 18vh;
+    margin-left: 4vh;
+}
+
+label {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(50, 50, 50);
+}
+
+input {
+    height: 2.5vh;
+    width: 20vh;
+    border: 1px solid #E5E7EB;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 3px solid blue;
+}
+  
+.form {
+    display: flex;
+    gap: 100px;
+    padding: 20px 50px;
+    margin-top: 10px;
+}
+
+.form p {
+    opacity: 0.75;
+    font-weight: bold;
+}
+
+.wrappertwo {
+    margin-top: 2vh;
+    margin-left: 4vh;
+}
+
+.leftform, .rightform {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+.logo, .logocontent {
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+
+.logo {
+    background-color: black;
+    opacity: 0.6;
+    top: 25vh;
+}
+
+.logocontent img {
+    height: 90%;
+    opacity: 1;
+}
+
+.logocontent {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    top: 10vh;
+}
+
+.logotext {
+    font-family: 'Norse-Bold';
+    color: white;
+    font-size: 100px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 2vh;
+    display: flex;
+    height: 20px;
+    width: 30vw;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.credits p {
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 648px) {
+    .wrapper {
+        margin-top: 50px;
+    }
+    input {
+        height: 2.5vh;
+        width: 12vh;
+        border: 1px solid #E5E7EB;
+    }
+    .form {
+        display: flex;
+        gap: 20px;
+        padding: 10px 20px;
+        margin-top: 0;
+    }
+    label > p {
+        text-wrap: nowrap;
+    }
+}

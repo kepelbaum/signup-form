@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-up Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left">
+        <div class='logo'></div>  
+        <div class='logocontent'><img alt="odin logo" src="./logo.png"><p class="logotext">ODIN</p></div>
+        <div class="credits"><p>Photo by <a href='https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA' target="_blank noopener noreferrer">Halie West</a> on <a href='https://unsplash.com/' target="_blank noopener noreferrer">Unsplash</a></p></div>
+    </div>
+    <div class="top">
+       <div class="wrapper">
+        <p>This is not a real online service! You know you need something</p>
+        <p>like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <span class='italic'>now</span> to get started.</p>
+        </br>
+        <p>You <span class="italic">know</span> you want to.</p>
+       </div> 
+    </div>
+    <div class="mid">
+        <div class="wrappertwo">
+            <p>Let's do this!</p>
+        </div>
+        <form class="form" action="./path" method="post">
+            <div class="leftform">
+                <div class='container'><label for="firstname"><p>FIRST NAME</p></label>
+                <input type="text" id="firstname" name="firstname"></div>
+                <div class='container'><label for="email"><p>EMAIL</p></label>
+                <input type="email" id="email" name="email"></div>
+                <div class='container'><label for="password"><p>PASSWORD</p></label>
+                <input type="password" id="password" name="password"></div>
+            </div>
+            <div class="rightform">
+                <div class='container'><label for="lastname"><p>LAST NAME</p></label>
+                <input type="text" id="lastname" name="lastname"></div>
+                <div class='container'><label for="phone"><p>PHONE NUMBER</p></label>
+                <input type="tel" id="phone" name="phone_number"></div>
+                <div class='container'><label for="confirm"><p>CONFIRM PASSWORD</p></label>
+                <input type="password" id="confirm" name="confirm_password"></div>
+            </div>
+        </form>
+    </div> 
+    <div class="bot">
+        <button>Create Account</button>
+        <p class="last">Already have an account? <a>Log in</a></p>
+    </div>  
+</body>
+</html>
